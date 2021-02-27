@@ -1,0 +1,21 @@
+algoritmo "media"
+// Função :
+// Autor :
+// Data : 26/02/2021
+// Seção de Declarações 
+var
+   id1, id2, id3, id4: inteiro
+   media: real
+inicio
+// Seção de Comandos 
+   escreval ("Digite a idade da Mãe")
+            leia(id1)
+   escreval ("Digite a idade do Pai")
+            leia (id2)
+   escreval ("Digite a idade do Filho")
+            leia (id3)
+   escreval ("Digite a idade da Filha")
+            leia (id4)
+   media <- (id1+id2+id3+id4)/4
+   escreval ("A média das idades da família é igual a ", media)
+fimalgoritmo
