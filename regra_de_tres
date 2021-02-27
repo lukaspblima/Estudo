@@ -1,0 +1,17 @@
+algoritmo "regra_de_tres"
+
+var
+      A, B, Y, X: real
+inicio
+      Escreval ("Regra de 3:")
+      Escreval ("- Se:       A = B")
+      Escreval ("- Então:    Y = X")
+      Escreva ("Digite A: ")
+      Leia (A)
+      Escreva ("Digite B: ")
+      Leia (B)
+      Escreva ("Digite Y: ")
+      Leia (Y)
+      X <- (B*Y)/A
+      Escreva ("Se ", A, " é igual a ", B, ", então ", Y, " é igual a ", X, ".")
+fimalgoritmo
