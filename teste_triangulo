@@ -15,26 +15,26 @@ inicio
       Isosceles <- ((L1 = L2) OU (L2 = L3) OU (L1 = L3)) E (TRI = VERDADEIRO)
       Escreva ("Os valores podem formar um Triângulo? ")
               SE (TRI = VERDADEIRO) ENTAO
-                 Escreval ("SIM")
+                 Escreval ("SIM, continuando...")
               SENAO
-                 Escreval ("NÃO")
+                 Escreval ("NÃO, esses valores não formam um triângulo!")
               FIMSE
       Escreva ("O Triângulo é equilátero? ")
               SE (Equilatero = VERDADEIRO) ENTAO
-                 Escreval ("SIM")
+                 Escreval ("SIM.")
               SENAO
-                 Escreval ("NÃO")
+                 Escreval ("NÃO.")
               FIMSE
       Escreva ("O Triângulo é escaleno? ")
                SE (Escaleno = VERDADEIRO) ENTAO
-                 Escreval ("SIM")
+                 Escreval ("SIM.")
               SENAO
-                 Escreval ("NÃO")
+                 Escreval ("NÃO.")
               FIMSE
       Escreva ("O Triângulo é isosceles? ")
               SE (Isosceles = VERDADEIRO) ENTAO
-                 Escreval ("SIM")
+                 Escreval ("SIM.")
               SENAO
-                 Escreval ("NÃO")
+                 Escreval ("NÃO.")
               FIMSE
 fimalgoritmo
