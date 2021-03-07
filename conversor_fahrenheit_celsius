@@ -1,0 +1,21 @@
+algoritmo "conversor_temperatura"
+var
+   F, C, resultado : real
+   temp : caractere
+inicio
+// expressão: C=(F-32)/1,8  & F=(C*1,8)+32
+   ESCREVAL ("Descubra a Temperatura em Celsius e Fahrenheit")
+   ESCREVA ("Qual temperatura deseja descobrir, 'C' ou 'F'? ")
+           LEIA (temp)
+   SE (temp = "C") OU (temp = "c") ENTAO
+      ESCREVA ("Digite a temperatura em Fahrenheit: ")
+           LEIA (F)
+      C <- (F-32)/1.8
+      ESCREVA ("A temperatura indicada é de ", C:4:2,"ºC.")
+   SENAO
+      ESCREVA ("Digite a temperatura em Celsius: ")
+           LEIA (C)
+      F <- (C*1.8)+32
+      ESCREVA ("A temperatura indicada é de ", F:4:2, "ºF.")
+   FIMSE
+fimalgoritmo
