@@ -1,0 +1,37 @@
+algoritmo "Calculadora_IMC"
+var
+      Massa, Altura, IMC : Real
+inicio
+      EscrevaL("Descobra aqui o seu IMC!")
+      Escreva("Digite o seu Peso (Kg): ")
+      Leia(Massa)
+      Escreva("Digite a sua Altura (m): ")
+      Leia(Altura)
+      IMC <- Massa / (Altura ^ 2)
+      EscrevaL("Seu IMC: ", IMC:5:2)
+      Se (IMC < 17) Entao
+           EscrevaL("Você está perigosamente abaixo da sua faixa de peso ideal.")
+      Senao
+           Se (IMC >= 17) E (IMC < 18.5) Entao
+                EscrevaL("Você está abaixo da sua faixa de peso ideal.")
+           Senao
+                Se (IMC >= 18.5) E (IMC < 25) Entao
+                     EscrevaL("Parabéns! Você está dentro da sua faixa de peso ideal."
+                Senao
+                     Se (IMC >= 25) E (IMC < 30) Entao
+                          EscrevaL("Você está acima da sua faixa de peso ideal.")
+                     Senao
+                          Se (IMC >= 30) E (IMC < 35) Entao
+                               EscrevaL("Você está na faixa de obesidade, muito acima do ideal. Procure ajuda médica.")
+                          Senao
+                               Se (IMC >= 35 E (IMC < 40) Entao
+                                    EscrevaL("Você está na faixa de obesidade severa, perigosamente acima do ideal. Procure ajuda médica!")
+                               Senao
+                                    EscrevaL("Você está na faixa de obesidade mórbida. Procure ajuda médica imediatamente.")
+                               FimSe
+                          FimSe
+                     FimSe
+                FimSe
+         FimSe
+      FimSe
+fimalgoritmo
