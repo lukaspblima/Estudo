@@ -1,0 +1,77 @@
+algoritmo "pesquisa"
+var
+      sexo, cont : caractere
+      c, idade, cabelo, preto, ruivo, loiro, castanho, jovem, adulto, idoso, homem, mulher : inteiro
+inicio
+      escrevaL("--------------------------")
+      escrevaL("     PESQUISA PESSOAL     ")
+      Repita
+            escrevaL("--------------------------")
+            escreva(" Digite o seu Sexo [H/M]: ")
+            leia (sexo)
+            Se (sexo = "M") entao
+                   mulher <- mulher +1
+            senao
+                   homem <- homem +1
+            fimse
+            escreva(" Digite a sua Idade?    : ")
+            leia (idade)
+            Se (idade >= 21) e (idade < 60) entao
+                     adulto <- adulto + 1
+                     Se (idade >= 60) entao
+                          idoso <- idoso + 1
+                     fimSe
+            Senao
+                     jovem <- jovem +1
+            fimSe
+            escrevaL("------------------------")
+            escreval(" Qual a cor do seu cabelo?")
+            escrevaL("------------------------")
+            escreval(" [1] Preto")
+            escreval(" [2] Castanho")
+            escreval(" [3] Loiro")
+            escreval(" [4] Ruivo")
+            ESCREVA (" RESPOSTA              :")
+            leia (cabelo)
+            Escolha cabelo
+                    caso 1
+                         preto <- preto +1
+                    caso 2
+                         castanho <- castanho +1
+                    caso 3
+                         loiro <- loiro +1
+                    caso 4
+                         ruivo <- ruivo +1
+            fimEscolha
+            escrevaL("------------------------")
+            escreva(" CONTINUA? [S/N]:       ")
+            leia (cont)
+            escrevaL("------------------------")
+            LimpaTela
+      Ate (cont = "N")
+      LimpaTela
+      escreva(" CALCULANDO RESULTADOS")
+      c <- 0
+      Repita
+            escreva(".")
+            escreva(".")
+            escreva(".")
+            c <- c +1
+      Ate (c = 10)
+      LimpaTela
+      escrevaL("------------------------")
+      escreval("       RESULTADOS       ")
+      escrevaL("------------------------")
+      escreval(" HOMENS             : ", homem)
+      escreval(" MULHERES           : ", mulher)
+      escrevaL("------------------------")
+      escreval(" JOVENS             : ", jovem)
+      escreval(" ADULTOS            : ", adulto)
+      escreval(" IDOSOS             : ", idoso)
+      escrevaL("------------------------")
+      escreval(" CABELO PRETO       : ", preto)
+      escreval(" CABELO CASTANHO    : ", castanho)
+      escreval(" CABELO LOIRO       : ", loiro)
+      escreval(" CABELO RUIVO       : ", ruivo)
+      escrevaL("------------------------")
+fimalgoritmo
